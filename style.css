@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family:'Montserrat',sans-serif;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+    width: 300px;
+    padding: 24px;
+}
+.sidebar .logo img{
+    width: 130px;
+}
+.sidebar .navigation{
+    list-style:none;
+    margin-top: 20px;
+}
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+
+}
+.sidebar .navigation ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.sidebar .navigation ul li .fa{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.sidebar .navigation ul li a:hover{
+    color: #ffffff;
+    
+}
+
+.sidebar .policies{
+    position: absolute;
+    bottom: 100px;
+}
+
+.sidebar .policies ul{
+    list-style: none;
+}
+.sidebar .policies ul li{
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a{
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+
+.sidebar .policies ul li a:hover{
+    text-decoration: underline;
+}
+.main-container{
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 14px 30px;
+}
+.topbar .prev-next-buttons button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+} 
+.topbar .navbar ul{
+    list-style: none;
+}
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+} 
+
+.topbar .navbar ul li a:hover {
+    color: #ffffff;
+    font-size: 15px;
+    
+}
+.topbar .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;margin-left: 20px;
+}
+.spotify-playlists {
+    padding: 20px 40px;
+}
+.spotify-playlists h2{
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+.spotify-playlists  .items{
+    border: 1px solid black;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 780px;
+    margin-left: 160px;
+
+}
+
+h4{
+padding-top: 35px;
+margin-right: 397px;
+}
+
+p{
+    margin-right: 370px;
+}
+
+.player-progress{
+    background-color: #c6bfbf;
+    border-radius: 5px;
+    height: 6px;
+    width: 100%;
+    margin: 40px 20px 35px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.progress{
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: all 0.2s linear;
+
+
+}
+.music-duration{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -25px;
+    margin-top: 43px;
+}
+
+#progress1{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: white;
+    border-radius: 4px;
+    margin: 40px 0;
+}
+#progress1::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.controls div:nth-child(3){
+    transform: scale(1.2);
+}

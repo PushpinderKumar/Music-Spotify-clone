@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clone</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <a href="">
+                <img src="images.png">
+            </a>
+        </div>
+
+        <div class="navigation">  
+            <ul>
+                <li>          
+                    <a href="">
+                    <span class="fa fa-home"></span>
+                    <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="fa fa-search"></span>
+                    <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="fa fa- fa-book"></span>
+                    <span>Your libary</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                    <span class="fa fa-add list"></span>
+                    <span>Create Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="fa fa-heart"></span>
+                    <span>liked songs</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+
+        <div class="policies">
+            <ul>
+                <li>
+                    <a href="">Cookies</a>
+                </li>
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+
+
+
+        <div class="main-container">
+            <div class="topbar">
+                <div class="prev-next-buttons">
+                    <button type="button" class="fa fas fa-chevron-left"></button>
+                    <button type="button" class="fa fas fa-chevron-right"></button>
+                </div>
+
+
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="">Sign Up</a>
+                        </li>
+                    </ul>
+                    <button type="button">Log In</button>
+                </div>
+
+            </div>
+
+            <div class="spotify-playlists">
+                <h2>Spotify Playlists</h2>
+                <div class="lists">
+                    <div class="items">
+                        <img src="artworks-Z3nyaAGz2JkO-0-t500x500.jpg"  alt="">
+                    <h4>Dil Lagiyan</h4>
+                    <p>Navaan Sandhu</p>
+
+
+
+                    <audio id="song">
+                        <source src="Dil_Lagiyan.mp3" type="audio/mpeg">
+                    </audio>
+                    <input type="range" value="0" id="progress1">
+                    
+
+                    <div class="controls">
+                        <div><i class="fa-solid fa-shuffle" id="shuffle"></i></div>
+                        <div><i class="fa-solid fa-backward-step" id="prev"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        <div><i class="fa-solid fa-forward-step" id="next"></i></div>
+                        <div><i class="fa-regular fa-heart" id="favorite"></i></div>
+                      </div>
+                      </div>
+
+                    
+    <script src="index.js"></script>
+
+
+</body>
+</html>
